@@ -9,11 +9,49 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var upTextField: UITextField!
+    @IBOutlet weak var underTextField: UITextField!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+       
+        
     }
 
+    func kansu(s1:String,s2:String,closure:([String]) -> String ) -> String{
+        
+        return closure([s1,s2])
+        
+    }
+    
+    @IBAction func addLabeiText(_ sender: UIButton) {
+        
+        resultLabel.text = kansu(s1: upTextField.text!, s2: underTextField.text!,closure: { array in
+            
+            return array[0] + array[1]
+            
+        })
+    
+}
 
 }
 
+
+//引数にクロージャーを持たせた関数
+//func kansu(s1:String,s2:String,closure:(String,String) -> String ) -> String{
+//
+//return closure(s1,s2)
+//
+//}
+//
+//@IBAction func addLabeiText(_ sender: UIButton) {
+//
+//resultLabel.text = kansu(s1: upTextField.text!, s2: underTextField.text!, closure: { (s3,s4) -> String in
+//
+//    return s3 + s4
+//
+//})
+//
+//}

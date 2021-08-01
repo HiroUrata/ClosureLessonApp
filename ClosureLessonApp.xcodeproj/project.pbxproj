@@ -13,6 +13,7 @@
 		5455E40726B67C69007FA9D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5455E40526B67C69007FA9D1 /* Main.storyboard */; };
 		5455E40926B67C6D007FA9D1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5455E40826B67C6D007FA9D1 /* Assets.xcassets */; };
 		5455E40C26B67C6D007FA9D1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5455E40A26B67C6D007FA9D1 /* LaunchScreen.storyboard */; };
+		5455E41426B67CBB007FA9D1 /* ClosureModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5455E41326B67CBB007FA9D1 /* ClosureModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		5455E40826B67C6D007FA9D1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5455E40B26B67C6D007FA9D1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5455E40D26B67C6D007FA9D1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5455E41326B67CBB007FA9D1 /* ClosureModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClosureModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 			children = (
 				5455E3FF26B67C69007FA9D1 /* AppDelegate.swift */,
 				5455E40126B67C69007FA9D1 /* SceneDelegate.swift */,
+				5455E41326B67CBB007FA9D1 /* ClosureModel.swift */,
 				5455E40326B67C69007FA9D1 /* ViewController.swift */,
 				5455E40526B67C69007FA9D1 /* Main.storyboard */,
 				5455E40826B67C6D007FA9D1 /* Assets.xcassets */,
@@ -140,6 +143,7 @@
 				5455E40426B67C69007FA9D1 /* ViewController.swift in Sources */,
 				5455E40026B67C69007FA9D1 /* AppDelegate.swift in Sources */,
 				5455E40226B67C69007FA9D1 /* SceneDelegate.swift in Sources */,
+				5455E41426B67CBB007FA9D1 /* ClosureModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
