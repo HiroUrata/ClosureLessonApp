@@ -20,21 +20,21 @@ class ViewController: UIViewController {
         
     }
 
-    func kansu(s1:String,s2:String,closure:([String]) -> String ) -> String{
+    func kansu(s1:String,s2:String,closure:([String],[String]) -> String ) -> String{
         
-        return closure([s1,s2])
+        return closure([s1,s2],[s2,s1])
         
     }
     
     @IBAction func addLabeiText(_ sender: UIButton) {
         
-        resultLabel.text = kansu(s1: upTextField.text!, s2: underTextField.text!,closure: { array in
+        resultLabel.text = kansu(s1: upTextField.text!, s2: underTextField.text!, closure: { (array1,array2) -> String in
             
-            return array[0] + array[1]
+            return array1[0] + array2[1] + array1[1] 
             
         })
     
-}
+    }
 
 }
 
